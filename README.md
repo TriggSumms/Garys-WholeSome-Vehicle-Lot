@@ -1,6 +1,6 @@
 # Garys-WholeSome-Vehicle-Lot
 
-# Class Based Inheritance
+## Class Based Inheritance
 
 Class based inheritance let's you specify that one type will contain **all** of the properties and methods that are defined in another type, without having to duplicate the code in the two source code files. Inheritance is a powerful feature of C#, but it should be used sparingly when you are defining many types in your program.
 
