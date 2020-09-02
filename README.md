@@ -1,4 +1,131 @@
 # Garys-WholeSome-Vehicle-Lot
+
+# Class Based Inheritance
+
+Class based inheritance let's you specify that one type will contain **all** of the properties and methods that are defined in another type, without having to duplicate the code in the two source code files. Inheritance is a powerful feature of C#, but it should be used sparingly when you are defining many types in your program.
+
+## Why Are You Learning This?
+
+You will use inheritance to reduce the amount of duplicated code that can arise in a system with dozens of types that all share the **exact** same properties and/or methods. It's one of the mechanisms to introduce polymorphism into a program.
+
+You will likely be asked about inheritance during the interview process and should be able to describe it in one of the following ways.
+
+1. Allows one type to include all of the public properties and methods of another type.
+1. It reduces duplicated code when many types in a program all have the same properties and methods.
+
+## Gary's Wholesale Garage
+
+You work for a company that sells all kinds of motorized vehicles - Gary's Wholesale Garage.
+
+We will represent _types_ of vehicles using C# classes.
+
+```cs
+public class Zero  // Electric motorcycle
+{
+    public double BatteryKWh { get; set; }
+    public string MainColor { get; set; }
+    public string MaximumOccupancy { get; set; }
+
+    public void ChargeBattery()
+    {
+        // method definition omitted
+    }
+}
+```
+
+```cs
+public class Cessna  // Propellor light aircraft
+{
+    public double FuelCapacity { get; set; }
+    public string MainColor { get; set; }
+    public string MaximumOccupancy { get; set; }
+
+    public void RefuelTank()
+    {
+        // method definition omitted
+    }
+}
+```
+
+```cs
+public class Cessna  // Propellor light aircraft
+{
+    public double FuelCapacity { get; set; }
+    public string MainColor { get; set; }
+    public string MaximumOccupancy { get; set; }
+
+    public void RefuelTank()
+    {
+        // method definition omitted
+    }
+}
+```
+
+```cs
+public class Tesla  // Electric car
+{
+    public double BatteryKWh { get; set; }
+    public string MainColor { get; set; }
+    public string MaximumOccupancy { get; set; }
+
+    public void ChargeBattery()
+    {
+        // method definition omitted
+    }
+}
+```
+
+```cs
+public class Ram  // Gas powered truck
+{
+    public double FuelCapacity { get; set; }
+    public string MainColor { get; set; }
+    public string MaximumOccupancy { get; set; }
+
+    public void RefuelTank()
+    {
+        // method definition omitted
+    }
+}
+```
+
+```cs
+public class Tesla  // Electric car
+{
+    public double BatteryKWh { get; set; }
+    public string MainColor { get; set; }
+    public string MaximumOccupancy { get; set; }
+
+    public void ChargeBattery()
+    {
+        // method definition omitted
+    }
+}
+```
+
+```cs
+public class Ram  // Gas powered truck
+{
+    public double FuelCapacity { get; set; }
+    public string MainColor { get; set; }
+    public string MaximumOccupancy { get; set; }
+
+    public void RefuelTank()
+    {
+        // method definition omitted
+    }
+}
+```
+
+When evaluating a system for opportunities to implement _inheritance_, we look for classes that have identical properties or methods. This is because inheritance lets us share code between classes by creating a _base class_ that other classes can inherit from.
+
+Do you see any properties and/or methods that each of the above vehicle classes have?
+
+That's right. They all share `MainColor` and `MaximumOccupancy`.
+
+As you add more vehicle types to your system, it would get very tedious to keep defining those properties in each of those classes. It would also increase the possibility of bugs being introduced. If your team decided to change the `MainColor` property to renamed to `BaseColor`, all of the classes would need to be changed. Since human beings are highly prone to error, a class could be missed during refactoring.
+
+To avoid these kinds of problems, you are going to create a more general type in your system and then have all vehicles inherit from it.
 ## Vehicle Class
 
 Since all of the types are vehicles, a good name for this new type would be `Vehicle`.
