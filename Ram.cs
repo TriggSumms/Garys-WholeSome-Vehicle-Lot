@@ -1,15 +1,16 @@
 using System;
 
+
 namespace GarysCars
 {
 
     public class Ram : Vehicle, IGasVehicle // Gas powered truck
     {
         public double FuelCapacity { get; set; }
-        public string CurrentTankPercentage { get; set; }
+        public int CurrentTankPercentage { get; set; }
         public void RefuelTank()
         {
-            // method definition omitted
+            CurrentTankPercentage= 100;
         }
         public override void Drive()
         {

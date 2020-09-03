@@ -4,7 +4,8 @@ using System;
 
 namespace GarysCars {
     public interface IElectricVehicle {
-        string CurrentChargePercentage {get; set;}
+        int CurrentChargePercentage {get; set;}
+        public void ChargeBattery();
     }
 
 }

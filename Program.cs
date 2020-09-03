@@ -32,18 +32,18 @@ namespace GarysCars
             };
 
             Console.WriteLine("Electric Vehicles");
-            foreach ( IElectricVehicle ev in ElectricVehicles)
+            foreach (IElectricVehicle ev in ElectricVehicles)
             {
                 Console.WriteLine($"{ev.CurrentChargePercentage}");
             }
 
-            foreach ( IElectricVehicle ev in ElectricVehicles)
+            foreach (IElectricVehicle ev in ElectricVehicles)
             {
                 // This should charge the vehicle to 100%
                 ev.ChargeBattery();
             }
 
-            foreach ( IElectricVehicle ev in ElectricVehicles)
+            foreach (IElectricVehicle ev in ElectricVehicles)
             {
                 Console.WriteLine($"{ev.CurrentChargePercentage}");
             }
@@ -56,24 +56,24 @@ namespace GarysCars
             };
 
             Console.WriteLine("Gas Vehicles");
-            foreach ( IGasVehicle gv in GasVehicles)
+            foreach (IGasVehicle gv in GasVehicles)
             {
                 Console.WriteLine($"{gv.CurrentTankPercentage}");
             }
 
-            foreach ( IGasVehicle gv in GasVehicles)
+            foreach (IGasVehicle gv in GasVehicles)
             {
                 // This should completely refuel the gas tank
                 gv.RefuelTank();
             }
 
-            foreach ( IGasVehicle gv in GasVehicles)
+            foreach (IGasVehicle gv in GasVehicles)
             {
                 Console.WriteLine($"{gv.CurrentTankPercentage}");
             }
             //------------------------------------------------------------------------------------------------------------------------------------------------------
 
-            fxs.Drive();
+/*             fxs.Drive();
             modelS.Drive();
             mx410.Drive();
             rammer.Drive();
@@ -86,7 +86,7 @@ namespace GarysCars
             fxs.Stop();
             modelS.Stop();
             mx410.Stop();
-            rammer.Stop();
+            rammer.Stop(); */
         }
     }
 }

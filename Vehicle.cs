@@ -13,12 +13,12 @@ namespace GarysCars
 
         public void ChargeBattery()
         {
-            // method definition omitted
+           
         }
 
         public void RefuelTank()
         {
-            // method definition omitted
+           
         }
         public virtual void Drive()
         {

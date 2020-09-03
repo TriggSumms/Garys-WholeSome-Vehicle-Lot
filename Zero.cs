@@ -8,11 +8,11 @@ namespace GarysCars
         {
             public double BatteryKWh { get; set; }
 
-            public string CurrentChargePercentage {get; set;}
+            public int CurrentChargePercentage {get; set;}
 
             public void ChargeBattery()
             {
-                // method definition omitted
+                CurrentChargePercentage= 100;
             }
            public override void Drive()
            {

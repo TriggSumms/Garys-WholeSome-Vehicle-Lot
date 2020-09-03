@@ -9,9 +9,9 @@ namespace GarysCars
 
         public void ChargeBattery()
         {
-            // method definition omitted
+            CurrentChargePercentage= 100;
         }
-        public string CurrentChargePercentage { get; set; }
+        public int CurrentChargePercentage { get; set; }
         public override void Drive()
         {
             Console.WriteLine($"The {Color} Tesla car scoots by. ");
