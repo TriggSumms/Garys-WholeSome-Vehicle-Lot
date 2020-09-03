@@ -7,6 +7,8 @@ namespace GarysCars
         public string Color { get; set; }
         public string MaximumOccupancy { get; set; }
 
+        public string PoweredSource {get; set;}
+
         public virtual void Drive()
         {
             Console.WriteLine($"The {Color} scoots by. ");
