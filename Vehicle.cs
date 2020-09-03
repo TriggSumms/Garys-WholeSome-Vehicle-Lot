@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace GarysCars
 {
@@ -7,8 +8,18 @@ namespace GarysCars
         public string Color { get; set; }
         public string MaximumOccupancy { get; set; }
 
-        public string PoweredSource {get; set;}
+        List<IElectricVehicle> ElectricVehicles = new List<IElectricVehicle>();
+        List<IGasVehicle> GasVehicles = new List<IGasVehicle>();
 
+        public void ChargeBattery()
+        {
+            // method definition omitted
+        }
+
+        public void RefuelTank()
+        {
+            // method definition omitted
+        }
         public virtual void Drive()
         {
             Console.WriteLine($"The {Color} scoots by. ");

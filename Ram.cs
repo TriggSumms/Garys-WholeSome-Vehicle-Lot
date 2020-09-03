@@ -3,10 +3,10 @@ using System;
 namespace GarysCars
 {
 
-    public class Ram : Vehicle, IPowerSource// Gas powered truck
+    public class Ram : Vehicle, IGasVehicle // Gas powered truck
     {
         public double FuelCapacity { get; set; }
-public string PoweredSource {get; set;}
+        public string CurrentTankPercentage { get; set; }
         public void RefuelTank()
         {
             // method definition omitted

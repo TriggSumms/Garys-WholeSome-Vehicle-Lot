@@ -4,11 +4,11 @@ using System;
 namespace GarysCars
 {
 
-        public class Zero : Vehicle, IPowerSource // Electric motorcycle
+        public class Zero : Vehicle, IElectricVehicle // Electric motorcycle
         {
             public double BatteryKWh { get; set; }
 
-            public string PoweredSource {get; set;}
+            public string CurrentChargePercentage {get; set;}
 
             public void ChargeBattery()
             {

@@ -3,7 +3,7 @@ using System;
 namespace GarysCars
 {
 
-    public class Tesla : Vehicle, IPowerSource // Electric car
+    public class Tesla : Vehicle, IElectricVehicle // Electric car
     {
         public double BatteryKWh { get; set; }
 
@@ -11,7 +11,7 @@ namespace GarysCars
         {
             // method definition omitted
         }
-        public string PoweredSource {get; set;}
+        public string CurrentChargePercentage { get; set; }
         public override void Drive()
         {
             Console.WriteLine($"The {Color} Tesla car scoots by. ");

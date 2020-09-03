@@ -3,10 +3,10 @@ using System;
 namespace GarysCars
 {
 
-    public class Cessna : Vehicle, IPowerSource// Propellor light aircraft
+    public class Cessna : Vehicle, IGasVehicle // Propellor light aircraft
     {
         public double FuelCapacity { get; set; }
-public string PoweredSource {get; set;}
+        public string CurrentTankPercentage { get; set; }
         public void RefuelTank()
         {
             // method definition omitted
