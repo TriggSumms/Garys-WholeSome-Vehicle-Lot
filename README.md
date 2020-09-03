@@ -246,7 +246,7 @@ Now you can run the program again and the Cessna will make a different noise.
 
 
 
-##Practice2:
+# Practice2: Interfaces
 ## Gas Fueling Problem
 
 In your project you should have classes that resemble the code below.
